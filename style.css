@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(245, 95, 120),rgb(232, 113, 133),rgb(190, 90, 240));
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.coin {
+    margin: 20px;
+}
+
+.coin img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
+button {
+    padding: .7vw 3vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+    border-radius: .6vw;
+}
+
+h1 {
+    margin-bottom: 2vw;
+    font-size: 3vw;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 2vw;
+}
+
+.coin.flip img {
+    animation: flip-animation 2s ease;
+}
+
+
+@keyframes flip-animation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(1720deg);
+    }
+}
+
+@media (max-width:800px) {
+
+    
+button {
+    padding: .7vw 3vw;
+    font-size: 3vw;
+}
+
+h1 {
+    margin-bottom: 2vw;
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+}
+
+@media (max-width:500px) {
+
+    
+    button {
+        font-size: 4vw;
+    }
+    
+    h1 {
+        margin-bottom: 2vw;
+        font-size: 5vw;
+    }
+    
+    h2 {
+        font-size: 4vw;
+    }
+    .coin img {
+        width: 30vw;
+        height: 30vw;
+    }
+    }
